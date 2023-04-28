@@ -103,7 +103,7 @@ while (running):
             player_idle = player_idleLeft
             if game.Player.rect.x > 60:
                 game.Player.moveLeft()
-        #  Appliquer le déga a la colistion
+        #  Appliquer le dégat a la colistion
         if game.check_collition(game.Player, game.all_ennemy):
             if game.Player.health > 0:
                 if time.monotonic() - game.Player.time_last_colistion > 3:
